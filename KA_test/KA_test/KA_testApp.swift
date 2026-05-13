@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct KA_testApp: App {
+    
+    @StateObject private var navigationManager = NavigationManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                UsersView()
+            }
+            .environmentObject(navigationManager)
         }
     }
 }

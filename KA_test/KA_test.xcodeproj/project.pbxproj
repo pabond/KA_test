@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		477156822FB3C17000017B02 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 477156812FB3C17000017B02 /* SwiftUIIntrospect */; };
+		4771568D2FB3CD6E00017B02 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4771568C2FB3CD6E00017B02 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		477156372FB2604F00017B02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4771568D2FB3CD6E00017B02 /* Kingfisher in Frameworks */,
+				477156822FB3C17000017B02 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = KA_test;
 			packageProductDependencies = (
+				477156812FB3C17000017B02 /* SwiftUIIntrospect */,
+				4771568C2FB3CD6E00017B02 /* Kingfisher */,
 			);
 			productName = KA_test;
 			productReference = 477156292FB2604D00017B02 /* KA_test.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 477156202FB2604D00017B02;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				477156802FB3C17000017B02 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				4771568B2FB3CD6E00017B02 /* XCRemoteSwiftPackageReference "kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4771562A2FB2604D00017B02 /* Products */;
 			projectDirPath = "";
@@ -570,6 +583,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		477156802FB3C17000017B02 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 26.0.1;
+			};
+		};
+		4771568B2FB3CD6E00017B02 /* XCRemoteSwiftPackageReference "kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		477156812FB3C17000017B02 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 477156802FB3C17000017B02 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		4771568C2FB3CD6E00017B02 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4771568B2FB3CD6E00017B02 /* XCRemoteSwiftPackageReference "kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 477156212FB2604D00017B02 /* Project object */;
 }
